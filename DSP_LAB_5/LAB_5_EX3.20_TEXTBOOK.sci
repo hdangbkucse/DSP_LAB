@@ -3,7 +3,6 @@ clear;
 clc;
 clf();
 
-// Parameters
 r = 0.8;
 w0 = %pi/4;
 
@@ -43,7 +42,6 @@ xpoly([p2_real-d, p2_real+d], ...
 xpoly([p2_real-d, p2_real+d], ...
       [p2_imag+d, p2_imag-d], "lines");
 
-// Set graph properties
 a = gca();
 a.data_bounds = [-1.2, -1.2; 1.2, 1.2];
 a.isoview = "on";
@@ -54,7 +52,6 @@ ylabel("Imaginary Axis Im(z)");
 
 xgrid();
 
-// Label pole and zero locations
 xstring(0.05, 0.05, "Zero");
 xstring(p1_real+0.06, p1_imag, "Pole 1");
 xstring(p2_real+0.06, p2_imag, "Pole 2");

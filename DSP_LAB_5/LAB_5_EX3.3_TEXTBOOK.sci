@@ -22,11 +22,9 @@ a.isoview = "on";
 
 xpoly([0, 0], [-R, R], "lines");
 
-// ROC boundaries
 xpoly((1/3)*cos(theta), (1/3)*sin(theta), "lines");
 xpoly(2*cos(theta), 2*sin(theta), "lines");
 
-// Poles marked by crosses
 d = 0.06;
 xpoly([1/3-d, 1/3+d], [-d, d], "lines");
 xpoly([1/3-d, 1/3+d], [d, -d], "lines");
